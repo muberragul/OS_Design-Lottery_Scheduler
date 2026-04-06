@@ -1,0 +1,15 @@
+int main() {
+    struct structSpring2024 userdata;
+
+    int returnInfo = getInfoSpring2024(&userdata);
+    printf("Return info before: %d\n", returnInfo);
+
+    nice(10);
+
+    setuid(1000);
+
+    returnInfo = getInfoSpring2024(&userdata);
+    printf("Return info after: %d\n", returnInfo);
+
+    return 0;
+}
